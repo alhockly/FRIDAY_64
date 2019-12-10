@@ -1,0 +1,40 @@
+
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+javafx {
+    version = "13"
+    modules = [ 'javafx.controls', 'javafx.fxml'  ]
+}
+
+
+
+//create a single Jar with all dependencies
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'kushcabbage.Main'
+    }
+
+
+}
+
+//Get dependencies from Maven central repository
+repositories {
+    mavenCentral()
+
+
+}
+
+
+
+
+
+
+//Project dependencies
+dependencies {
+
+}
+

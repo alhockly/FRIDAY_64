@@ -1,0 +1,8 @@
+
+*.lock
+/.gradle/*
+/.idea/*
+*.class
+
+.idea/gradle.xml
+.idea/jarRepositories.xml
