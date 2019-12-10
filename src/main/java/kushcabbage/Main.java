@@ -1,8 +1,13 @@
 package kushcabbage;
 
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.scene.control.Label;
 
@@ -28,7 +33,9 @@ public class Main extends Application {
         Label l = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
 
 
-        Scene scene = new Scene(new StackPane(l));
+        StackPane root = new StackPane(l);
+        root.setBackground(new Background(new BackgroundFill(Color.BLACK,  CornerRadii.EMPTY,  Insets.EMPTY)));
+        Scene scene = new Scene(root);
 
         stage.setScene(scene);
         stage.setFullScreen(true);

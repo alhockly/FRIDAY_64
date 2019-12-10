@@ -14,7 +14,7 @@ import javax.sound.sampled.TargetDataLine;
 public class HotwordListener implements Runnable {
 
     static {
-        System.loadLibrary("snowboy-detect-java");
+        System.load(System.getProperty("user.dir")+"/libs/libsnowboy-detect-java.dylib");
     }
 
     @Override

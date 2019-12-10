@@ -7,43 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5caa94a-a2d7-46dd-87cc-7821f168abba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/libsnowboy-detect-java.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/HotwordListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jniLibs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jniLibs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/GSpeech.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/GoogleAPIOld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FRIDAY_64.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FRIDAY_64.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jniLibs/libsnowboy-detect-java.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FRIDAY_64/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FRIDAY_64/ai/kitt/snowboy/SnowboyDetect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FRIDAY_64/ai/kitt/snowboy/SnowboyVad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FRIDAY_64/ai/kitt/snowboy/snowboy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FRIDAY_64/ai/kitt/snowboy/snowboyJNI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FRIDAY_64/kushcabbage/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FRIDAY_64/kushcabbage/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snowboyRestructure/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snowboyRestructure/META-INF/snowboyRestructure.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snowboyRestructure/ai/kitt/snowboy/SnowboyDetect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snowboyRestructure/ai/kitt/snowboy/SnowboyVad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snowboyRestructure/ai/kitt/snowboy/snowboy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snowboyRestructure/ai/kitt/snowboy/snowboyJNI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snowboyRestructure/kushcabbage/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snowboyRestructure/kushcabbage/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ai/kitt/snowboy/SnowboyDetect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ai/kitt/snowboy/SnowboyDetect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ai/kitt/snowboy/SnowboyVad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ai/kitt/snowboy/SnowboyVad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ai/kitt/snowboy/snowboy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ai/kitt/snowboy/snowboyJNI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ai/kitt/snowboy/snowboyJNI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kushcabbage/Demo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kushcabbage/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/FRIDAY_64.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/HotwordListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/HotwordListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,9 +112,9 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kushcabbage.Demo" />
+  <component name="RunManager" selected="Application.GoogleAPIOld">
+    <configuration name="GSpeech" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kushcabbage.GSpeech" />
       <module name="FRIDAY_64.main" />
       <extension name="coverage">
         <pattern>
@@ -154,8 +126,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kushcabbage.Main" />
+    <configuration name="GoogleAPIOld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kushcabbage.GoogleAPIOld" />
       <module name="FRIDAY_64.main" />
       <extension name="coverage">
         <pattern>
@@ -213,16 +185,16 @@
       <item itemvalue="Gradle.FRIDAY_64 [jar]" />
       <item itemvalue="JAR Application.FRIDAY_64.jar" />
       <item itemvalue="Gradle.FRIDAY_64 [dependencies]" />
-      <item itemvalue="Application.Demo" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.GSpeech" />
+      <item itemvalue="Application.GoogleAPIOld" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.GoogleAPIOld" />
+        <item itemvalue="Gradle.FRIDAY_64 [dependencies]" />
+        <item itemvalue="Application.GSpeech" />
         <item itemvalue="JAR Application.FRIDAY_64.jar" />
         <item itemvalue="Gradle.FRIDAY_64 [jar]" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Gradle.FRIDAY_64 [dependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +224,7 @@
       <workItem from="1575884322451" duration="979000" />
       <workItem from="1575906776938" duration="3256000" />
       <workItem from="1575970932362" duration="615000" />
-      <workItem from="1575971848631" duration="9339000" />
+      <workItem from="1575971848631" duration="12998000" />
     </task>
     <servers />
   </component>
@@ -286,40 +258,40 @@
       <screen x="0" y="23" width="1680" height="952" />
     </state>
     <state x="609" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1575645189302" />
-    <state width="1638" height="291" key="GridCell.Tab.0.bottom" timestamp="1575991723675">
+    <state width="1638" height="291" key="GridCell.Tab.0.bottom" timestamp="1575996167209">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="291" key="GridCell.Tab.0.bottom/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1575991723675" />
+    <state width="1638" height="291" key="GridCell.Tab.0.bottom/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1575996167209" />
     <state width="1638" height="183" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1575979873683" />
     <state width="1638" height="313" key="GridCell.Tab.0.bottom/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1575988204018" />
     <state width="1638" height="291" key="GridCell.Tab.0.bottom/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1575988054239" />
     <state width="1638" height="291" key="GridCell.Tab.0.bottom/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1575988048158" />
     <state width="1358" height="275" key="GridCell.Tab.0.bottom/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1575971144973" />
     <state width="1358" height="275" key="GridCell.Tab.0.bottom/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1575971141788" />
-    <state width="1638" height="291" key="GridCell.Tab.0.center" timestamp="1575991723674">
+    <state width="1638" height="291" key="GridCell.Tab.0.center" timestamp="1575996167208">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="291" key="GridCell.Tab.0.center/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1575991723674" />
+    <state width="1638" height="291" key="GridCell.Tab.0.center/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1575996167208" />
     <state width="1638" height="183" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1575979873682" />
     <state width="1638" height="313" key="GridCell.Tab.0.center/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1575988204017" />
     <state width="1638" height="291" key="GridCell.Tab.0.center/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1575988054237" />
     <state width="1638" height="291" key="GridCell.Tab.0.center/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1575988048157" />
     <state width="1358" height="275" key="GridCell.Tab.0.center/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1575971144972" />
     <state width="1358" height="275" key="GridCell.Tab.0.center/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1575971141786" />
-    <state width="1638" height="291" key="GridCell.Tab.0.left" timestamp="1575991723674">
+    <state width="1638" height="291" key="GridCell.Tab.0.left" timestamp="1575996167207">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="291" key="GridCell.Tab.0.left/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1575991723674" />
+    <state width="1638" height="291" key="GridCell.Tab.0.left/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1575996167207" />
     <state width="1638" height="183" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1575979873682" />
     <state width="1638" height="313" key="GridCell.Tab.0.left/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1575988204017" />
     <state width="1638" height="291" key="GridCell.Tab.0.left/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1575988054237" />
     <state width="1638" height="291" key="GridCell.Tab.0.left/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1575988048156" />
     <state width="1358" height="275" key="GridCell.Tab.0.left/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1575971144972" />
     <state width="1358" height="275" key="GridCell.Tab.0.left/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1575971141786" />
-    <state width="1638" height="291" key="GridCell.Tab.0.right" timestamp="1575991723674">
+    <state width="1638" height="291" key="GridCell.Tab.0.right" timestamp="1575996167208">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="291" key="GridCell.Tab.0.right/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1575991723674" />
+    <state width="1638" height="291" key="GridCell.Tab.0.right/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1575996167208" />
     <state width="1638" height="183" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1575979873683" />
     <state width="1638" height="313" key="GridCell.Tab.0.right/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1575988204017" />
     <state width="1638" height="291" key="GridCell.Tab.0.right/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1575988054238" />
