@@ -19,7 +19,7 @@ public class Demo {
 
   public static void main(String[] args) {
     // Sets up audio.
-    AudioFormat format = new AudioFormat(16000, 16, 1, true, false);
+    AudioFormat format = new AudioFormat(44100, 16, 1, true, false);
     DataLine.Info targetInfo = new DataLine.Info(TargetDataLine.class, format);
 
     // Sets up Snowboy.

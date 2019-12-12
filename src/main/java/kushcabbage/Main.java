@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import javafx.scene.control.Label;
 
 
-public class Main extends Application {
+public class Main{ //extends Application {
     static HotwordListener iHotwordClass;
 
 
@@ -22,24 +22,21 @@ public class Main extends Application {
         iHotwordClass = new HotwordListener();
         Thread t = new Thread(iHotwordClass);
         t.start();
-        launch();
+        //launch();
     }
 
-    @Override
+    //@Override
     public void start(Stage stage) throws Exception {
         String javaVersion = System.getProperty("java.version");
         String javafxVersion = System.getProperty("javafx.version");
 
         Label l = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
 
-
         StackPane root = new StackPane(l);
         root.setBackground(new Background(new BackgroundFill(Color.BLACK,  CornerRadii.EMPTY,  Insets.EMPTY)));
         Scene scene = new Scene(root);
-
         stage.setScene(scene);
         stage.setFullScreen(true);
-
         stage.show();
     }
 }

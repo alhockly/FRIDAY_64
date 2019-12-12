@@ -20,12 +20,12 @@ public class HotwordListener implements Runnable {
     @Override
     public void run() {
         // Sets up audio.
-        AudioFormat format = new AudioFormat(16000, 16, 1, true, false);
+        AudioFormat format = new AudioFormat(44100, 16, 2, true, false);
         DataLine.Info targetInfo = new DataLine.Info(TargetDataLine.class, format);
 
         // Sets up Snowboy.
         SnowboyDetect detector = new SnowboyDetect("resources/common.res",
-                "resources/models/snowboy.umdl");
+                "resources/models/jarvis.umdl");
         detector.SetSensitivity("0.5");
         detector.SetAudioGain(1);
         detector.ApplyFrontend(false);
