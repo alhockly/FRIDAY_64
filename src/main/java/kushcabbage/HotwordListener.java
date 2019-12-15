@@ -14,7 +14,7 @@ import javax.sound.sampled.TargetDataLine;
 public class HotwordListener implements Runnable {
 
     static {
-        System.load(System.getProperty("user.dir")+"/libs/libsnowboy-detect-java");
+        System.load(System.getProperty("user.dir")+"/libs/libsnowboy-detect-java.so");
     }
 
     @Override
@@ -25,7 +25,7 @@ public class HotwordListener implements Runnable {
 
         // Sets up Snowboy.
         SnowboyDetect detector = new SnowboyDetect("resources/common.res",
-                "resources/models/jarvis.umdl");
+                "resources/models/snowboy.umdl");
         detector.SetSensitivity("0.5");
         detector.SetAudioGain(1);
         detector.ApplyFrontend(false);
