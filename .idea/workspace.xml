@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="snowboyRestructure:jar" />
+      <artifact name="FRIDAY_64:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5caa94a-a2d7-46dd-87cc-7821f168abba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/snowboyRestructure_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/FRIDAY_64.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/FRIDAY_64.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +60,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GroovyConsoleState">
+    <option name="list">
+      <list>
+        <Entry>
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
+          <option name="moduleName" value="FRIDAY_64" />
+          <option name="title" value="FRIDAY_64 (Bundled Groovy 2.4.17)" />
+        </Entry>
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1Uc85dCWS7cgu4J4aVNnmlhbntq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -77,7 +91,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -107,32 +121,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kushcabbage.Demo" />
-      <module name="FRIDAY_64.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kushcabbage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoogleAPIOld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kushcabbage.GoogleAPIOld" />
-      <module name="FRIDAY_64.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kushcabbage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kushcabbage.Main" />
       <module name="FRIDAY_64.main" />
@@ -165,24 +153,47 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="FRIDAY_64 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="FRIDAY_64.jar (1)" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/FRIDAY_64_jar/FRIDAY_64.jar" />
+      <method v="2" />
+    </configuration>
     <configuration name="FRIDAY_64.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/FRIDAY_64.jar" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.GoogleAPIOld" />
-      <item itemvalue="Application.Demo" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.FRIDAY_64 [dependencies]" />
       <item itemvalue="JAR Application.FRIDAY_64.jar" />
+      <item itemvalue="Gradle.FRIDAY_64 [jar]" />
+      <item itemvalue="JAR Application.FRIDAY_64.jar (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JAR Application.FRIDAY_64.jar (1)" />
         <item itemvalue="JAR Application.FRIDAY_64.jar" />
+        <item itemvalue="Gradle.FRIDAY_64 [jar]" />
         <item itemvalue="Gradle.FRIDAY_64 [dependencies]" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.GoogleAPIOld" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

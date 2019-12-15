@@ -22,8 +22,6 @@ import java.util.Scanner;
 public class Main{ //extends Application {
     static HotwordListener iHotwordClass;
 
-
-
     public static void main(String[] args) {
         GoogleAPIOld GSpeechAPI = new GoogleAPIOld();
         if (!System.getProperty("os.name").toLowerCase().contains("windows")){
@@ -36,16 +34,7 @@ public class Main{ //extends Application {
 
 
 
-
-        Scanner input = new Scanner(System.in);
-        while(true){
-            int usrInput = input.nextInt();
-            System.out.println(usrInput);
-            if (usrInput==1){
-                System.out.println("started");
-                GSpeechAPI.startSpeechRecognition();
-            }
-        }
+        //GSpeechAPI.startSpeechRecognition();
 
     }
 
