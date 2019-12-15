@@ -6,7 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5caa94a-a2d7-46dd-87cc-7821f168abba" name="Default Changelist" comment="" />
+    <list default="true" id="a5caa94a-a2d7-46dd-87cc-7821f168abba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/GoogleApiListenerThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/IHotwordToSpeech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/GoogleAPIOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/GoogleAPIOld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/HotwordListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/HotwordListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +54,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -328,16 +336,5 @@
       <screen x="0" y="23" width="1680" height="949" />
     </state>
     <state x="546" y="237" width="670" height="675" key="run.anything.popup/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1575906831282" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/kushcabbage/Main.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

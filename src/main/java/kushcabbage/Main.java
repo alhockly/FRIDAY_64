@@ -12,29 +12,48 @@ package kushcabbage;
 //import javafx.scene.control.Label;
 
 
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.DataLine;
+import javax.sound.sampled.Line;
+import javax.sound.sampled.Mixer;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main{ //extends Application {
     static HotwordListener iHotwordClass;
 
 
 
     public static void main(String[] args) {
-        System.getProperties().list(System.out);
+        GoogleAPIOld GSpeechAPI = new GoogleAPIOld();
         if (!System.getProperty("os.name").toLowerCase().contains("windows")){
-            iHotwordClass = new HotwordListener();
+
+            iHotwordClass = new HotwordListener(GSpeechAPI);
+            Thread t = new Thread(iHotwordClass);
+            t.start();
+
+        }
+        
+
+
+
+        Scanner input = new Scanner(System.in);
+        while(true){
+            int usrInput = input.nextInt();
+            System.out.println(usrInput);
+            if (usrInput==1){
+                System.out.println("started");
+                GSpeechAPI.startSpeechRecognition();
+            }
         }
 
-        Thread t = new Thread(iHotwordClass);
-        t.start();
-        //launch();
     }
 
     //    //@Override
     //    public void start(Stage stage) throws Exception {
     //        String javaVersion = System.getProperty("java.version");
     //        String javafxVersion = System.getProperty("javafx.version");
-    //
     //        Label l = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
-    //
     //        StackPane root = new StackPane(l);
     //        root.setBackground(new Background(new BackgroundFill(Color.BLACK,  CornerRadii.EMPTY,  Insets.EMPTY)));
     //        Scene scene = new Scene(root);
@@ -42,4 +61,8 @@ public class Main{ //extends Application {
     //        stage.setFullScreen(true);
     //        stage.show();
     //    }
+
+
+
 }
+
