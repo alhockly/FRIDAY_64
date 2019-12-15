@@ -7,12 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5caa94a-a2d7-46dd-87cc-7821f168abba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/HotwordListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/HotwordListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,20 +57,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GroovyConsoleState">
-    <option name="list">
-      <list>
-        <Entry>
-          <option name="moduleName" value="FRIDAY_64.main" />
-          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
-        </Entry>
-        <Entry>
-          <option name="moduleName" value="FRIDAY_64" />
-          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_1.groovy" />
-        </Entry>
-      </list>
-    </option>
-  </component>
   <component name="ProjectId" id="1Uc85dCWS7cgu4J4aVNnmlhbntq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -85,7 +70,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -96,6 +81,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
@@ -108,7 +94,19 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.FRIDAY_64 [dependencies]">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kushcabbage.Demo" />
       <module name="FRIDAY_64.main" />
@@ -122,8 +120,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GSpeech" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kushcabbage.GSpeech" />
+    <configuration name="GoogleAPIOld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kushcabbage.GoogleAPIOld" />
       <module name="FRIDAY_64.main" />
       <extension name="coverage">
         <pattern>
@@ -135,8 +133,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleAPIOld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kushcabbage.GoogleAPIOld" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kushcabbage.Main" />
       <module name="FRIDAY_64.main" />
       <extension name="coverage">
         <pattern>
@@ -172,33 +170,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JAR Application.FRIDAY_64.jar" />
-      <item itemvalue="Gradle.FRIDAY_64 [dependencies]" />
-      <item itemvalue="Application.GSpeech" />
       <item itemvalue="Application.GoogleAPIOld" />
       <item itemvalue="Application.Demo" />
+      <item itemvalue="Gradle.FRIDAY_64 [dependencies]" />
+      <item itemvalue="JAR Application.FRIDAY_64.jar" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FRIDAY_64 [dependencies]" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JAR Application.FRIDAY_64.jar" />
+        <item itemvalue="Gradle.FRIDAY_64 [dependencies]" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.GoogleAPIOld" />
-        <item itemvalue="Application.GSpeech" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -215,11 +201,23 @@
       <workItem from="1575906776938" duration="3256000" />
       <workItem from="1575970932362" duration="615000" />
       <workItem from="1575971848631" duration="14740000" />
+      <workItem from="1576412043166" duration="512000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="128" key="#FRIDAY_64_[fatJar]" timestamp="1575906969984">
