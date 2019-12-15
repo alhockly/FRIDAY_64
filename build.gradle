@@ -17,7 +17,9 @@ jar {
     manifest {
         attributes 'Main-Class': 'kushcabbage.Main'
     }
-
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 
 }
 

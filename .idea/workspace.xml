@@ -7,11 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5caa94a-a2d7-46dd-87cc-7821f168abba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/GoogleApiListenerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/IHotwordToSpeech.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/GoogleAPIOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/GoogleAPIOld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/HotwordListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/HotwordListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/GoogleApiListenerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/GoogleApiListenerThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
