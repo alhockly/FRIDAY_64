@@ -25,7 +25,7 @@ public class HotwordListener implements Runnable {
 
         // Sets up Snowboy.
         SnowboyDetect detector = new SnowboyDetect("resources/common.res",
-                "resources/models/snowboy.umdl");
+                "resources/models/Friday.pmdl");
         detector.SetSensitivity("0.5");
         detector.SetAudioGain(1);
         detector.ApplyFrontend(false);
