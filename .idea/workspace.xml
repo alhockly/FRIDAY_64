@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5caa94a-a2d7-46dd-87cc-7821f168abba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kushcabbage/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="a5caa94a-a2d7-46dd-87cc-7821f168abba" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +197,7 @@
       <workItem from="1575906776938" duration="3256000" />
       <workItem from="1575970932362" duration="615000" />
       <workItem from="1575971848631" duration="14740000" />
-      <workItem from="1576412043166" duration="512000" />
+      <workItem from="1576412043166" duration="1332000" />
     </task>
     <servers />
   </component>
@@ -332,5 +328,16 @@
       <screen x="0" y="23" width="1680" height="949" />
     </state>
     <state x="546" y="237" width="670" height="675" key="run.anything.popup/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1575906831282" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/kushcabbage/Main.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
