@@ -17,9 +17,7 @@ jar {
     manifest {
         attributes 'Main-Class': 'kushcabbage.Main'
     }
-    from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-    }
+
 
 }
 
@@ -41,6 +39,6 @@ dependencies {
     compile 'com.google.cloud:google-cloud-speech:1.22.1'
     compile 'com.google.cloud:google-cloud-storage:1.102.0'
     implementation 'com.github.goxr3plus:java-google-speech-api:8.0.0'
-    
+    compile files('libs/libsnowboy-detect-java.so')
 }
 

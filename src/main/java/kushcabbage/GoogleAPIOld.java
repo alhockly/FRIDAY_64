@@ -24,16 +24,22 @@ import net.sourceforge.javaflacencoder.FLACFileWriter;
 
 
 
-public class GoogleAPIOld implements IHotwordToSpeech {
+public class GoogleAPIOld {
 
     //private final TextToSpeech tts = new TextToSpeech();
     private final Microphone mic = new Microphone(FLACFileWriter.FLAC);
     private final GSpeechDuplex duplex = new GSpeechDuplex("AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw");
     String oldText = "";
-    GoogleApiListenerThread GThread;
+
+
+
 
     public static void main(String[] args) {
+
         new GoogleAPIOld();
+
+
+
     }
 
     /**
@@ -41,8 +47,10 @@ public class GoogleAPIOld implements IHotwordToSpeech {
      */
     public GoogleAPIOld() {
 
+
         //Duplex Configuration
         duplex.setLanguage("en");
+
         duplex.addResponseListener(new GSpeechResponseListener() {
 
             public void onResponse(GoogleResponse googleResponse) {
@@ -59,7 +67,7 @@ public class GoogleAPIOld implements IHotwordToSpeech {
         });
 
 
-        //startSpeechRecognition();
+        startSpeechRecognition();
 
     }
 
@@ -69,7 +77,7 @@ public class GoogleAPIOld implements IHotwordToSpeech {
      * @param
      */
     public void makeDecision(String output) {
-        System.out.println("ENDED");
+
         output = output.trim();
         //System.out.println(output.trim());
 
@@ -80,8 +88,23 @@ public class GoogleAPIOld implements IHotwordToSpeech {
             return;}
         output=output.toLowerCase();
 
+        if(output.toLowerCase().equals("cancel")){
+            System.exit(0);
+        }
+
+        if(output.toLowerCase().contains("off") && output.toLowerCase().contains("lights")){
+
+        }
+        if(output.toLowerCase().contains("on") && output.toLowerCase().contains("lights")){
+
+        }
+
+
 
     }
+
+
+
 
 
 
@@ -90,18 +113,13 @@ public class GoogleAPIOld implements IHotwordToSpeech {
      */
     public void startSpeechRecognition() {
         //Start a new Thread so our application don't lags
-
-        GThread = new GoogleApiListenerThread(mic,duplex);
-        Thread t = new Thread(GThread);
-        t.start();
-
-//        new Thread(() -> {
-//            try {
-//                duplex.recognize(mic.getTargetDataLine(), mic.getAudioFormat());
-//            } catch (LineUnavailableException | InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        }).start();
+        new Thread(() -> {
+            try {
+                duplex.recognize(mic.getTargetDataLine(), mic.getAudioFormat());
+            } catch (LineUnavailableException | InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 
     /**
@@ -113,8 +131,6 @@ public class GoogleAPIOld implements IHotwordToSpeech {
     }
 
 
-    @Override
-    public void startGApiListening() {
-        startSpeechRecognition();
-    }
+
+
 }

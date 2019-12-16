@@ -13,12 +13,7 @@ import javax.sound.sampled.TargetDataLine;
 
 public class HotwordListener implements Runnable {
 
-    IHotwordToSpeech ToSpechInterface;
-    public HotwordListener(IHotwordToSpeech hotwordToSpeech){
-        ToSpechInterface = hotwordToSpeech;
-    }
     static {
-        // .so on linux
         System.load(System.getProperty("user.dir")+"/libs/libsnowboy-detect-java.so");
     }
 
@@ -31,7 +26,7 @@ public class HotwordListener implements Runnable {
         // Sets up Snowboy.
         SnowboyDetect detector = new SnowboyDetect("resources/common.res",
                 "resources/models/Friday.pmdl");
-        detector.SetSensitivity("1");
+        detector.SetSensitivity("0.5");
         detector.SetAudioGain(1);
         detector.ApplyFrontend(false);
 
@@ -66,12 +61,10 @@ public class HotwordListener implements Runnable {
                 int result = detector.RunDetection(snowboyData, snowboyData.length);
                 if (result > 0) {
                     System.out.print("Hotword " + result + " detected!\n");
-                    ToSpechInterface.startGApiListening();
                 }
             }
         } catch (Exception e) {
             System.err.println(e);
         }
     }
-
 }
