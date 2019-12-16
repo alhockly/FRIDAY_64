@@ -13,10 +13,22 @@ import javax.sound.sampled.TargetDataLine;
 
 public class HotwordListener implements Runnable {
 
-    static {
-        System.load(System.getProperty("user.dir")+"/libs/libsnowboy-detect-java.so");
-    }
+    static String UBUNTU_TAG = "ubuntu";
+    static String MAC_TAG = "mac";
+    IHotwordToSpeech iHotwordToSpeech;
 
+    public HotwordListener(String OStag,IHotwordToSpeech hotwordToSpeech) {
+            iHotwordToSpeech = hotwordToSpeech;
+            if(OStag.equals(UBUNTU_TAG)){
+                System.load(System.getProperty("user.dir") + "/libs/libsnowboy-detect-java.so");
+                return;
+            }
+            if(OStag.equals(MAC_TAG)){
+                System.load(System.getProperty("user.dir") + "/libs/libsnowboy-detect-java.dylib");
+                return;
+            }
+
+    }
     @Override
     public void run() {
         // Sets up audio.
@@ -26,7 +38,7 @@ public class HotwordListener implements Runnable {
         // Sets up Snowboy.
         SnowboyDetect detector = new SnowboyDetect("resources/common.res",
                 "resources/models/Friday.pmdl");
-        detector.SetSensitivity("0.5");
+        detector.SetSensitivity("1");
         detector.SetAudioGain(1);
         detector.ApplyFrontend(false);
 
@@ -61,6 +73,7 @@ public class HotwordListener implements Runnable {
                 int result = detector.RunDetection(snowboyData, snowboyData.length);
                 if (result > 0) {
                     System.out.print("Hotword " + result + " detected!\n");
+                    iHotwordToSpeech.startGApiListening();
                 }
             }
         } catch (Exception e) {

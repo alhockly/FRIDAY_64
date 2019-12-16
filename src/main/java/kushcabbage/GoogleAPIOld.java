@@ -1,4 +1,3 @@
-
 package kushcabbage;
 
 import java.io.File;
@@ -7,24 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
-
 import javax.sound.sampled.LineUnavailableException;
-
-
 import com.darkprograms.speech.microphone.Microphone;
 import com.darkprograms.speech.recognizer.GSpeechDuplex;
 import com.darkprograms.speech.recognizer.GSpeechResponseListener;
 import com.darkprograms.speech.recognizer.GoogleResponse;
 ////https://github.com/lkuza2/java-speech-api
 
-
 import net.sourceforge.javaflacencoder.FLACFileWriter;
 
 
-
-
-public class GoogleAPIOld {
+public class GoogleAPIOld implements IHotwordToSpeech {
 
     //private final TextToSpeech tts = new TextToSpeech();
     private final Microphone mic = new Microphone(FLACFileWriter.FLAC);
@@ -32,14 +24,9 @@ public class GoogleAPIOld {
     String oldText = "";
 
 
-
-
     public static void main(String[] args) {
-
-        new GoogleAPIOld();
-
-
-
+        GoogleAPIOld g = new GoogleAPIOld();
+        g.startSpeechRecognition();
     }
 
     /**
@@ -67,7 +54,7 @@ public class GoogleAPIOld {
         });
 
 
-        startSpeechRecognition();
+        //startSpeechRecognition();
 
     }
 
@@ -87,17 +74,6 @@ public class GoogleAPIOld {
         else{
             return;}
         output=output.toLowerCase();
-
-        if(output.toLowerCase().equals("cancel")){
-            System.exit(0);
-        }
-
-        if(output.toLowerCase().contains("off") && output.toLowerCase().contains("lights")){
-
-        }
-        if(output.toLowerCase().contains("on") && output.toLowerCase().contains("lights")){
-
-        }
 
 
 
@@ -131,6 +107,8 @@ public class GoogleAPIOld {
     }
 
 
-
-
+    @Override
+    public void startGApiListening() {
+        startSpeechRecognition();
+    }
 }

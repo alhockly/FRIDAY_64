@@ -15,16 +15,25 @@ package kushcabbage;
 public class Main{ //extends Application {
     static HotwordListener iHotwordClass;
 
-
-
     public static void main(String[] args) {
+        GoogleAPIOld googleAPI = new GoogleAPIOld();
         System.getProperties().list(System.out);
-        if (!System.getProperty("os.name").toLowerCase().contains("windows")){
-            iHotwordClass = new HotwordListener();
+        String OSName= System.getProperty("os.name");
+        if (OSName.toLowerCase().contains("windows")){
+            System.out.println("Windows is not supported by the snowboy hotword detection library");
         }
 
-        Thread t = new Thread(iHotwordClass);
-        t.start();
+        if (OSName.toLowerCase().contains("ubuntu")){
+            iHotwordClass = new HotwordListener(HotwordListener.UBUNTU_TAG,googleAPI);
+            Thread t = new Thread(iHotwordClass);
+            t.start();
+        }
+        if(OSName.toLowerCase().contains("mac")) {
+            iHotwordClass = new HotwordListener(HotwordListener.MAC_TAG,googleAPI);
+            Thread t = new Thread(iHotwordClass);
+            t.start();
+        }
+
         //launch();
     }
 

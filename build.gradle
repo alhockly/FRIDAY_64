@@ -1,22 +1,28 @@
 
 plugins {
-
+    id 'java'
     id 'org.openjfx.javafxplugin' version '0.0.8'
 }
 
 javafx {
-    version = "13"
+    version = "11"
     modules = [ 'javafx.controls', 'javafx.fxml'  ]
 }
 
-
+sourceCompatibility = 1.11
 
 //create a single Jar with all dependencies
 jar {
 
     manifest {
-        attributes 'Main-Class': 'kushcabbage.Main'
+        attributes("Implementation-Title": "FRIDAY_64",
+                "Main-Class": "kushcabbage.Main",
+                "Implementation-Version": '1.0')
     }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    //destinationDir = file("$rootDir")
 
 
 }
@@ -39,6 +45,6 @@ dependencies {
     compile 'com.google.cloud:google-cloud-speech:1.22.1'
     compile 'com.google.cloud:google-cloud-storage:1.102.0'
     implementation 'com.github.goxr3plus:java-google-speech-api:8.0.0'
-    compile files('libs/libsnowboy-detect-java.so')
+
 }
 
