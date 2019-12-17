@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: FRIDAY_64
+Main-Class: kushcabbage.Main
+Implementation-Version: 1.0
+

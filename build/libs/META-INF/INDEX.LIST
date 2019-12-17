@@ -1,0 +1,13 @@
+JarIndex-Version: 1.0
+
+google-cloud-core-1.91.3.jar
+META-INF
+META-INF/maven
+META-INF/maven/com.google.cloud
+META-INF/maven/com.google.cloud/google-cloud-core
+com
+com/google
+com/google/cloud
+com/google/cloud/spi
+com/google/cloud/testing
+
