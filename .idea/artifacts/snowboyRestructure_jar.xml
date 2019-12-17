@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="snowboyRestructure:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/snowboyRestructure_jar</output-path>
-    <root id="archive" name="snowboyRestructure.jar">
-      <element id="module-output" name="FRIDAY_64" />
-    </root>
-  </artifact>
-</component>

@@ -1,7 +1,7 @@
 
 *.lock
 /.gradle/*
-/.idea/*
+.idea/*
 *.class
 
 .idea/gradle.xml
