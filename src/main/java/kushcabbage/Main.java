@@ -23,7 +23,7 @@ public class Main{ //extends Application {
             System.out.println("Windows is not supported by the snowboy hotword detection library");
         }
 
-        if (OSName.toLowerCase().contains("ubuntu")){
+        if (OSName.toLowerCase().contains("linux") && System.getProperty("os.arch").contains("64")){
             iHotwordClass = new HotwordListener(HotwordListener.UBUNTU_TAG,googleAPI);
             Thread t = new Thread(iHotwordClass);
             t.start();
