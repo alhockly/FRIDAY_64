@@ -53,7 +53,7 @@ public class HotwordListener implements Runnable {
             short[] snowboyData = new short[1600];
             int numBytesRead;
 
-            System.out.println("starting");
+            System.out.println("starting hotword detection");
             while (true) {
                 // Reads the audio data in the blocking mode. If you are on a very slow
                 // machine such that the hotword detector could not process the audio
